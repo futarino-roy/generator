@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="canvas-container"></div>
+  <input id="color" type="color" list="color-picker">
+<datalist id="color-picker">
+  <option value="#ff0000">
+  <option value="#00ff00">
+  <option value="#0000ff">
+  <option value="#FFC0CB">
+  <option value="#E0FFFF">
+  <option value="#7FFFD4">
+  <option value="#DDDDDD">
+  <option value="#FFEEFF">
+</datalist>
+<button id="button">決定</button>
+
+  <div class="movement-buttons">
+    <button onclick="movePart('left'); console.log('Left button clicked')">Left</button>
+    <button onclick="movePart('right'); console.log('Right button clicked')">Right</button>
+    <button onclick="movePart('up'); console.log('Up button clicked')">Up</button>
+    <button onclick="movePart('down'); console.log('Down button clicked')">Down</button>
+  </div>
+  <div class="part-selector">
+    <button id="hair-button" onclick="togglePartList('hair')">Change Hair</button>
+    <button id="eyes-button" onclick="togglePartList('eyes')">Change Eyes</button>
+    <button id="nose-button" onclick="togglePartList('nose')">Change Nose</button>
+    <button id="mouth-button" onclick="togglePartList('mouth')">Change Mouth</button>
+    
+  </div>
+  <div class="parts-list" id="hair-list">
+    <img src="image/hair-1.jpg" onclick="changePart('hair', 'image/hair-1.jpg')">
+  </div>
+  <div class="parts-list" id="eyes-list">
+    <img src="image/eye-1.png" onclick="changePart('eyes', 'image/eye-1.png')">
+    <img src="image/eye-2.jpg" onclick="changePart('eyes', 'image/eye-2.jpg')">
+  </div>
+  <div class="parts-list" id="nose-list">
+    <img src="image/nose-1.png" onclick="changePart('nose', 'image/nose-1.png')">
+    <img src="image/nose-2.png" onclick="changePart('nose', 'image/nose-2.png')">
+  </div>
+  <div class="parts-list" id="mouth-list">
+    <img src="image/mouth-1.jpg" onclick="changePart('mouth', 'image/mouth-1.jpg')">
+    <img src="image/mouth-2.jpg" onclick="changePart('mouth', 'image/mouth-2.jpg')">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
