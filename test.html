@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>フタリノジェネレーター</h1>
+    </div>
+  </header>
   <div id="canvas-container"></div>
   <input id="color" type="color" list="color-picker">
 <datalist id="color-picker">
@@ -30,6 +35,7 @@
   <div class="part-selector">
     <button id="face-button" onclick="togglePartList('face')">Change Face</button>
     <button id="hair-button" onclick="togglePartList('hair')">Change Hair</button>
+    <button id="mayuge-button" onclick="togglePartList('mayuge')">Change mayuge</button>
     <button id="eyes-button" onclick="togglePartList('eyes')">Change Eyes</button>
     <button id="nose-button" onclick="togglePartList('nose')">Change Nose</button>
     <button id="mouth-button" onclick="togglePartList('mouth')">Change Mouth</button>
@@ -41,18 +47,26 @@
   <div class="parts-list" id="hair-list">
     <img src="image/hair/1.png" onclick="changePart('hair', 'image/hair/1.png')">
     <img src="image/hair/2.png" onclick="changePart('hair', 'image/hair/2.png')">
+    <img src="image/hair/3.png" onclick="changePart('hair', 'image/hair/3.png')">
+  </div>
+  <div class="parts-list" id="mayuge-list">
+    <img src="image/mayuge/1.png" onclick="changePart('mayuge', 'image/mayuge/1.png')">
   </div>
   <div class="parts-list" id="eyes-list">
     <img src="image/me/1.png" onclick="changePart('eyes', 'image/me/1.png')">
     <img src="image/me/2.png" onclick="changePart('eyes', 'image/me/2.png')">
+    <img src="image/me/3.png" onclick="changePart('eyes', 'image/me/3.png')">
   </div>
   <div class="parts-list" id="nose-list">
     <img src="image/hana/1.png" onclick="changePart('nose', 'image/hana/1.png')">
     <img src="image/hana/2.png" onclick="changePart('nose', 'image/hana/2.png')">
+    <img src="image/hana/3.png" onclick="changePart('nose', 'image/hana/3.png')">
   </div>
   <div class="parts-list" id="mouth-list">
     <img src="image/mouth/1.png" onclick="changePart('mouth', 'image/mouth/1.png')">
     <img src="image/mouth/2.png" onclick="changePart('mouth', 'image/mouth/2.png')">
+    <img src="image/mouth/3.png" onclick="changePart('mouth', 'image/mouth/3.png')">
+    <img src="image/mouth/4.png" onclick="changePart('mouth', 'image/mouth/4.png')">
   </div>
   <script src="script.js"></script>
 </body>
