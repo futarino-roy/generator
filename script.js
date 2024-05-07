@@ -9,10 +9,10 @@ const ctx = canvas.getContext('2d');
 // パーツの画像ファイルのパス
 const parts = {
   face: ['image/face/1.png'],
-  hair: ['image/hair/1.png'],
+  hair: ['image/hair/1.png','image/hair/2.png'],
   eyes: ['image/me/1.png','image/me/2.png'],
-  nose: ['image/hana/2.png'],
-  mouth: ['image/mouth/1.png']
+  nose: ['image/hana/1.png','image/hana/2.png'],
+  mouth: ['image/mouth/1.png','image/mouth/2.png']
 };
 
 // 現在のパーツ
@@ -32,7 +32,7 @@ function drawFace() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawPart(currentParts.face, 0, 0, 250, 250);
   drawPart(currentParts.hair, 0, 0, 250, 250);
-  drawPart(currentParts.eyes, 105, 130, 40, 18);
+  drawPart(currentParts.eyes, 0, 0, 250, 250);
   drawPart(currentParts.nose, 0, 0, 250, 250);
   drawPart(currentParts.mouth, 0, 0, 250, 250);
 }
@@ -94,6 +94,8 @@ window.onload = function() {
   });
   drawFace(); // 顔を描画
 };
+
+
 
 
 
