@@ -9,16 +9,18 @@ const ctx = canvas.getContext('2d');
 // パーツの画像ファイルのパス
 const parts = {
   face: ['image/face/1.png'],
-  hair: ['image/hair/1.png','image/hair/2.png'],
-  eyes: ['image/me/1.png','image/me/2.png'],
-  nose: ['image/hana/1.png','image/hana/2.png'],
-  mouth: ['image/mouth/1.png','image/mouth/2.png']
+  hair: ['image/hair/1.png','image/hair/2.png','image/hair/3.png'],
+  mayuge: ['image/mayuge/1.png'],
+  eyes: ['image/me/1.png','image/me/2.png','image/me/3.png'],
+  nose: ['image/hana/1.png','image/hana/2.png','image/hana/3.png'],
+  mouth: ['image/mouth/1.png','image/mouth/2.png','image/mouth/3.png','image/mouth/4.png']
 };
 
 // 現在のパーツ
 let currentParts = {
   hair: parts.face[0], // 初期のヘアーパーツを設定
   hair: parts.hair[0], // 初期のヘアーパーツを設定
+  mayuge: parts.mayuge[0],
   eyes: parts.eyes[0],
   nose: parts.nose[0],
   mouth: parts.mouth[0]
@@ -32,6 +34,7 @@ function drawFace() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawPart(currentParts.face, 0, 0, 250, 250);
   drawPart(currentParts.hair, 0, 0, 250, 250);
+  drawPart(currentParts.mayuge, 0, 0, 250, 250);
   drawPart(currentParts.eyes, 0, 0, 250, 250);
   drawPart(currentParts.nose, 0, 0, 250, 250);
   drawPart(currentParts.mouth, 0, 0, 250, 250);
