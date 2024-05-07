@@ -28,30 +28,28 @@
     <button onclick="movePart('down'); console.log('Down button clicked')">Down</button>
   </div>
   <div class="part-selector">
+    <button id="face-button" onclick="togglePartList('face')">Change Face</button>
     <button id="hair-button" onclick="togglePartList('hair')">Change Hair</button>
     <button id="eyes-button" onclick="togglePartList('eyes')">Change Eyes</button>
     <button id="nose-button" onclick="togglePartList('nose')">Change Nose</button>
     <button id="mouth-button" onclick="togglePartList('mouth')">Change Mouth</button>
     
   </div>
+  <div class="parts-list" id="face-list">
+    <img src="image/face/1.png" onclick="changePart('face', 'image/face/1.png')">
+  </div>
   <div class="parts-list" id="hair-list">
-    <img src="image/hair-1.jpg" onclick="changePart('hair', 'image/hair-1.jpg')">
+    <img src="image/hair/1.png" onclick="changePart('hair', 'image/hair/1.png')">
   </div>
   <div class="parts-list" id="eyes-list">
-    <img src="image/eye-1.png" onclick="changePart('eyes', 'image/eye-1.png')">
-    <img src="image/eye-2.jpg" onclick="changePart('eyes', 'image/eye-2.jpg')">
+    <img src="image/me/1.png" onclick="changePart('eyes', 'image/me/1.png')">
   </div>
   <div class="parts-list" id="nose-list">
-    <img src="image/nose-1.png" onclick="changePart('nose', 'image/nose-1.png')">
-    <img src="image/nose-2.png" onclick="changePart('nose', 'image/nose-2.png')">
+    <img src="image/hana/1.png" onclick="changePart('nose', 'image/hana/1.png')">
   </div>
   <div class="parts-list" id="mouth-list">
-    <img src="image/mouth-1.jpg" onclick="changePart('mouth', 'image/mouth-1.jpg')">
-    <img src="image/mouth-2.jpg" onclick="changePart('mouth', 'image/mouth-2.jpg')">
+    <img src="image/mouth/1.png" onclick="changePart('mouth', 'image/mouth/1.png')">
   </div>
-
-  <h1>私です</h1>
-
   <script src="script.js"></script>
 </body>
 </html>
